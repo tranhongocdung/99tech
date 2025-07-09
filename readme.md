@@ -8,3 +8,8 @@ It is important that you minimally attempt the problems, even if you do not arri
 ## Submission ##
 You can either provide a link to an online repository, attach the solution in your application, or whichever method you prefer.
 We're cool as long as we can view your solution without any pain.
+
+## My note ##
+- Problem1: I essentially used a pure html and javascript to solve this problem and visualize the tests
+- Problem2: Please checkout the code and run it using "npm run dev"
+- Problem3: I added a README there
