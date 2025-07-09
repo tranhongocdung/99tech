@@ -1,0 +1,46 @@
+<html>
+  <head></head>
+  <body>
+    <script type="text/javascript">
+      var sum_to_n_a = function (n) {
+        let sum = 0;
+        for (let i = 1; i <= n; i++) {
+          sum += i;
+        }
+        return sum;
+      };
+
+      var sum_to_n_b = function (n) {
+        if (n < 1) return 0;
+        return (n * (n + 1)) / 2;
+      };
+
+      var sum_to_n_c = function (n) {
+        if (n < 1) return 0;
+        return n + sum_to_n_c(n - 1);
+      };
+
+      let n1 = -5;
+      let n2 = 0;
+      let n3 = 8;
+      document.write("Test sum using sum_to_n_a - loop:<br>");
+      document.write("N = " + n1 + " => Result: " + sum_to_n_a(n1) + "<br>");
+      document.write("N = " + n2 + " => Result: " + sum_to_n_a(n2) + "<br>");
+      document.write(
+        "N = " + n3 + " => Result: " + sum_to_n_a(n3) + "<br><br>"
+      );
+      document.write("Test sum using sum_to_n_b - mathamatic formula:<br>");
+      document.write("N = " + n1 + " => Result: " + sum_to_n_b(n1) + "<br>");
+      document.write("N = " + n2 + " => Result: " + sum_to_n_b(n2) + "<br>");
+      document.write(
+        "N = " + n3 + " => Result: " + sum_to_n_b(n3) + "<br><br>"
+      );
+      document.write("Test sum using sum_to_n_c - recursion:<br>");
+      document.write("N = " + n1 + " => Result: " + sum_to_n_c(n1) + "<br>");
+      document.write("N = " + n2 + " => Result: " + sum_to_n_c(n2) + "<br>");
+      document.write(
+        "N = " + n3 + " => Result: " + sum_to_n_c(n3) + "<br><br>"
+      );
+    </script>
+  </body>
+</html>
